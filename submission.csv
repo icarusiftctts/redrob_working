@@ -1,101 +1,101 @@
 candidate_id,rank,score,reasoning
-CAND_0002025,1,0.87849,"Senior AI Engineer, 6yr, Trivandrum, Kerala. Skills: FAISS (47 end., 86mo); OpenSearch (41 end., 50mo). Senior AI Engineer at Apple (42mo). Response 80%, notice 30d."
-CAND_0081846,2,0.79384,"Lead AI Engineer, 7yr, Jaipur, Rajasthan. Skills: Information Retrieval (59 end., 93mo); pgvector (11 end., 38mo). Senior Machine Learning Engineer at Paytm (52mo). Response 73%, notice 30d."
-CAND_0018499,3,0.73268,"Senior Machine Learning Engineer, 7yr, Noida, Uttar Pradesh. Skills: Recommendation Systems (52 end., 46mo); Pinecone (31 end., 54mo). Senior Machine Learning Engineer at Flipkart (42mo). Response 61%, notice 15d."
-CAND_0011687,4,0.7016,"Senior NLP Engineer, 8yr, Indore, Madhya Pradesh. Skills: OpenSearch (31 end., 92mo); FAISS (41 end., 42mo). Senior NLP Engineer at Niramai (52mo). Response 89%, notice 15d."
-CAND_0077337,5,0.68935,"Staff Machine Learning Engineer, 7yr, Kochi, Kerala. Skills: Semantic Search (23 end., 39mo); pgvector (19 end., 75mo). Senior NLP Engineer at Glance (44mo). Response 95%, notice 60d."
-CAND_0053605,6,0.68285,"Senior Software Engineer (ML), 7yr, Noida, Uttar Pradesh. Skills: pgvector (47 end., 50mo); Semantic Search (30 end., 37mo). Senior Software Engineer (ML) at Verloop.io (44mo). Response 88%, notice 30d."
-CAND_0064326,7,0.67511,"Search Engineer, 8yr, Gurgaon, Haryana. Skills: Semantic Search (31 end., 37mo); Python (25 end., 60mo). Search Engineer at Sarvam AI (31mo). Response 94%, notice 45d."
-CAND_0046525,8,0.67097,"Senior Machine Learning Engineer, 6yr, Pune, Maharashtra. Skills: Elasticsearch (24 end., 31mo); Machine Learning (13 end., 70mo). Senior Machine Learning Engineer at Genpact AI (48mo). Response 88%, notice 60d."
-CAND_0036184,9,0.66961,"Recommendation Systems Engineer, 6yr, Trivandrum, Kerala. Skills: FAISS (6 end., 51mo); Semantic Search (50 end., 39mo). Recommendation Systems Engineer at CRED (52mo). Response 90%, notice 30d."
-CAND_0093912,10,0.66245,"Senior Data Scientist, 5yr, Chandigarh, Chandigarh. Skills: Embeddings (5 end., 61mo); Recommendation Systems (46 end., 42mo). Senior Data Scientist at Razorpay (27mo). Response 66%, notice 30d."
-CAND_0065195,11,0.65991,"Search Engineer, 5yr, Kolkata, West Bengal. Skills: LLMs (34 end., 59mo); Elasticsearch (31 end., 89mo). Search Engineer at CRED (48mo). Response 80%, notice 45d."
-CAND_0046064,12,0.64193,"Senior NLP Engineer, 9yr, Coimbatore, Tamil Nadu. Skills: Python (41 end., 40mo); Pinecone (58 end., 85mo). Senior NLP Engineer at Salesforce (36mo). Response 78%, notice 30d."
-CAND_0079387,13,0.63715,"AI Engineer, 7yr, Trivandrum, Kerala. Skills: Recommendation Systems (37 end., 59mo); Python (14 end., 51mo). AI Engineer at Microsoft (22mo). Response 81%, notice 30d."
-CAND_0000031,14,0.6235,"Recommendation Systems Engineer, 6yr, Hyderabad, Telangana. Skills: FAISS (19 end., 35mo); Pinecone (34 end., 88mo). NLP Engineer at Uber (27mo). Response 91%, notice 60d."
-CAND_0075574,15,0.62084,"Machine Learning Engineer, 6yr, Bangalore, Karnataka. Skills: pgvector (50 end., 60mo); Recommendation Systems (30 end., 21mo). Machine Learning Engineer at Observe.AI (36mo). Response 58%, notice 60d."
-CAND_0041610,16,0.61954,"Recommendation Systems Engineer, 7yr, Indore, Madhya Pradesh. Skills: Elasticsearch (28 end., 94mo); OpenSearch (54 end., 82mo). Recommendation Systems Engineer at Zoho (31mo). Response 52%, notice 30d."
-CAND_0098454,17,0.6186,"AI Specialist, 7yr, Indore, Madhya Pradesh. Skills: OpenSearch (50 end., 24mo). AI Specialist at Meesho (52mo). Response 87%, notice 60d."
-CAND_0086022,18,0.60811,"Senior Applied Scientist, 5yr, Kolkata, West Bengal. Skills: Vector Search (45 end., 36mo); Recommendation Systems (54 end., 53mo). Senior ML Engineer — Search & Ranking at Uber (38mo). Response 55%, notice 0d."
-CAND_0061257,19,0.59845,"Staff Machine Learning Engineer, 8yr, Noida, Uttar Pradesh. Skills: Machine Learning (23 end., 61mo); Information Retrieval Systems (32 end., 58mo). Senior Applied Scientist at Yellow.ai (52mo). Response 87%, notice 30d."
-CAND_0088025,20,0.59758,"Staff Machine Learning Engineer, 9yr, Jaipur, Rajasthan. Skills: Pinecone (25 end., 49mo); LLMs (48 end., 71mo). Staff Machine Learning Engineer at Yellow.ai (45mo). Response 83%, notice 90d. Flags: 90d notice."
-CAND_0050454,21,0.59567,"AI Engineer, 7yr, Delhi, Delhi. Skills: Fine-tuning LLMs (41 end., 74mo); FAISS (33 end., 62mo). Machine Learning Engineer at Adobe (31mo). Response 77%, notice 30d."
-CAND_0008295,22,0.59557,"AI Research Engineer, 6yr, Pune, Maharashtra. Skills: Python (53 end., 53mo). AI Research Engineer at Razorpay (50mo). Response 89%, notice 45d."
-CAND_0070525,23,0.58936,"Senior Software Engineer (ML), 5yr, Hyderabad, Telangana. Skills: Recommendation Systems (17 end., 53mo); Python (59 end., 19mo). Senior Software Engineer (ML) at Mad Street Den (34mo). Response 93%, notice 45d."
-CAND_0076163,24,0.58565,"NLP Engineer, 7yr, Chandigarh, Chandigarh. Skills: Semantic Search (53 end., 82mo); Python (59 end., 25mo). NLP Engineer at Ola (46mo). Response 84%, notice 60d."
-CAND_0052682,25,0.5789,"NLP Engineer, 7yr, Vizag, Andhra Pradesh. Skills: Semantic Search (38 end., 89mo); FAISS (2 end., 76mo). NLP Engineer at Aganitha (46mo). Response 88%, notice 30d."
-CAND_0052328,26,0.57885,"Recommendation Systems Engineer, 6yr, Pune, Maharashtra. Skills: OpenSearch (24 end., 42mo); Recommendation Systems (2 end., 34mo). Recommendation Systems Engineer at Amazon (52mo). Response 79%, notice 30d."
-CAND_0024878,27,0.57284,"AI Specialist, 6yr, Vizag, Andhra Pradesh. Skills: pgvector (0 end., 52mo); Information Retrieval (6 end., 18mo). AI Specialist at HCL (36mo). Response 84%, notice 60d."
-CAND_0071974,28,0.57244,"Senior AI Engineer, 8yr, Vizag, Andhra Pradesh. Skills: Pinecone (5 end., 51mo); Machine Learning (45 end., 20mo). Senior AI Engineer at Netflix (50mo). Response 76%, notice 45d."
-CAND_0044222,29,0.57055,"AI Engineer, 8yr, Vizag, Andhra Pradesh. Skills: Vector Search (16 end., 34mo); OpenSearch (34 end., 75mo). AI Engineer at PolicyBazaar (49mo). Response 60%, notice 60d."
-CAND_0050876,30,0.56859,"Applied ML Engineer, 6yr, Kolkata, West Bengal. Skills: Qdrant (54 end., 28mo); FAISS (19 end., 31mo). Applied ML Engineer at Freshworks (38mo). Response 67%, notice 90d. Flags: 90d notice."
-CAND_0062247,31,0.56778,"AI Engineer, 7yr, Kochi, Kerala. Skills: Pinecone (5 end., 37mo); Vector Search (43 end., 75mo). NLP Engineer at Dream11 (50mo). Response 78%, notice 30d."
-CAND_0037566,32,0.56519,"Machine Learning Engineer, 7yr, Bangalore, Karnataka. Skills: Pinecone (37 end., 74mo); NLP (58 end., 35mo). Machine Learning Engineer at LinkedIn (51mo). Response 50%, notice 15d."
-CAND_0033179,33,0.55731,"AI Research Engineer, 7yr, Ahmedabad, Gujarat. Skills: OpenSearch (36 end., 18mo); Fine-tuning LLMs (33 end., 19mo). Senior Software Engineer (ML) at CRED (44mo). Response 84%, notice 30d."
-CAND_0070514,34,0.55074,"AI Specialist, 6yr, Bangalore, Karnataka. Skills: OpenSearch (55 end., 47mo). AI Specialist at Glance (43mo). Response 80%, notice 60d."
-CAND_0078492,35,0.54879,"Recommendation Systems Engineer, 5yr, Kochi, Kerala. Skills: Machine Learning (19 end., 43mo); FAISS (55 end., 66mo). Senior Data Scientist at Adobe (49mo). Response 70%, notice 30d."
-CAND_0072688,36,0.54599,"Data Scientist, 7yr, Pune, Maharashtra. Skills: Recommendation Systems (21 end., 52mo); Qdrant (12 end., 41mo). Data Scientist at PolicyBazaar (52mo). Response 87%, notice 45d."
-CAND_0049540,37,0.53864,"ML Engineer, 7yr, Trivandrum, Kerala. Skills: pgvector (56 end., 19mo). Data Scientist at BYJU'S (32mo). Response 86%, notice 60d."
-CAND_0068811,38,0.53835,"Applied ML Engineer, 8yr, Pune, Maharashtra. Skills: Vector Search (16 end., 79mo); Qdrant (41 end., 70mo). AI Engineer at Yellow.ai (26mo). Response 42%, notice 30d."
-CAND_0014440,39,0.53033,"Recommendation Systems Engineer, 6yr, Chennai, Tamil Nadu. Skills: Elasticsearch (18 end., 28mo); Machine Learning (10 end., 42mo). Recommendation Systems Engineer at CRED (31mo). Response 64%, notice 60d."
-CAND_0095528,40,0.52743,"Senior Data Scientist, 5yr, Indore, Madhya Pradesh. Skills: OpenSearch (43 end., 46mo); Semantic Search (26 end., 64mo). Senior Data Scientist at Netflix (33mo). Response 55%, notice 45d."
-CAND_0099806,41,0.51966,"AI Engineer, 5yr, Bhubaneswar, Odisha. Skills: pgvector (30 end., 18mo); FAISS (26 end., 58mo). AI Engineer at Mad Street Den (33mo). Response 76%, notice 30d."
-CAND_0041669,42,0.51828,"Recommendation Systems Engineer, 8yr, Noida, Uttar Pradesh. Skills: FAISS (7 end., 38mo); Semantic Search (7 end., 93mo). Search Engineer at Mad Street Den (52mo). Response 77%, notice 60d."
-CAND_0048558,43,0.51623,"Data Scientist, 7yr, Noida, Uttar Pradesh. Skills: OpenSearch (59 end., 41mo); Qdrant (22 end., 42mo). Data Scientist at Rephrase.ai (36mo). Response 80%, notice 30d."
-CAND_0033445,44,0.51536,"ML Engineer, 7yr, Ahmedabad, Gujarat. Skills: Information Retrieval (26 end., 35mo); Semantic Search (34 end., 46mo). ML Engineer at upGrad (41mo). Response 94%, notice 30d."
-CAND_0067866,45,0.51361,"Senior Software Engineer (ML), 6yr, Noida, Uttar Pradesh. Skills: Embeddings (32 end., 50mo); pgvector (32 end., 55mo). Senior Software Engineer (ML) at Tech Mahindra (38mo). Response 79%, notice 45d."
-CAND_0064888,46,0.50667,"ML Engineer, 6yr, Vizag, Andhra Pradesh. Skills: pgvector (19 end., 49mo). ML Engineer at Verloop.io (34mo). Response 92%, notice 30d."
-CAND_0006418,47,0.50618,"Machine Learning Engineer, 6yr, Gurgaon, Haryana. Skills: Semantic Search (30 end., 69mo); Embeddings (43 end., 71mo). Machine Learning Engineer at Verloop.io (40mo). Response 92%, notice 60d."
-CAND_0077498,48,0.50374,"Senior Software Engineer (ML), 5yr, Ahmedabad, Gujarat. Skills: no verified domain skills. Senior Software Engineer (ML) at Niramai (42mo). Response 89%, notice 60d."
-CAND_0029439,49,0.49645,"AI Specialist, 6yr, Ahmedabad, Gujarat. Skills: Qdrant (13 end., 34mo). Senior Software Engineer (ML) at upGrad (51mo). Response 60%, notice 60d."
-CAND_0018549,50,0.49315,"Recommendation Systems Engineer, 7yr, Coimbatore, Tamil Nadu. Skills: Elasticsearch (43 end., 73mo); Qdrant (37 end., 74mo). Machine Learning Engineer at Flipkart (44mo). Response 73%, notice 60d."
-CAND_0093763,51,0.49302,"Senior Software Engineer (ML), 5yr, Noida, Uttar Pradesh. Skills: FAISS (51 end., 36mo). Senior Software Engineer (ML) at Swiggy (28mo). Response 92%, notice 90d. Flags: 90d notice."
-CAND_0011162,52,0.49172,"Recommendation Systems Engineer, 6yr, Coimbatore, Tamil Nadu. Skills: FAISS (34 end., 94mo); Vector Search (30 end., 46mo). Recommendation Systems Engineer at Meesho (28mo). Response 75%, notice 90d. Flags: 90d notice."
-CAND_0004402,53,0.49011,"AI Research Engineer, 6yr, Delhi, Delhi. Skills: no verified domain skills. Data Scientist at Zomato (39mo). Response 83%, notice 60d."
-CAND_0000969,54,0.48741,"AI Specialist, 6yr, Coimbatore, Tamil Nadu. Skills: Semantic Search (30 end., 49mo); Elasticsearch (31 end., 50mo). AI Specialist at Vedantu (40mo). Response 80%, notice 60d."
-CAND_0042506,55,0.4868,"Search Engineer, 4yr, Mumbai, Maharashtra. Skills: Semantic Search (19 end., 27mo); Fine-tuning LLMs (11 end., 53mo). Machine Learning Engineer at Meesho (32mo). Response 48%, notice 15d."
-CAND_0025640,56,0.48596,"AI Research Engineer, 6yr, Jaipur, Rajasthan. Skills: Semantic Search (21 end., 23mo); FAISS (5 end., 56mo). AI Research Engineer at HCL (45mo). Response 87%, notice 30d."
-CAND_0007009,57,0.48563,"Recommendation Systems Engineer, 8yr, Noida, Uttar Pradesh. Skills: Python (38 end., 95mo); Embeddings (28 end., 44mo). Recommendation Systems Engineer at PolicyBazaar (48mo). Response 62%, notice 30d."
-CAND_0098846,58,0.48395,"AI Engineer, 8yr, Indore, Madhya Pradesh. Skills: Machine Learning (9 end., 92mo); Qdrant (51 end., 95mo). Search Engineer at Google (26mo). Response 62%, notice 45d."
-CAND_0078002,59,0.48253,"Machine Learning Engineer, 6yr, Coimbatore, Tamil Nadu. Skills: pgvector (2 end., 60mo); NLP (40 end., 50mo). Machine Learning Engineer at Meta (34mo). Response 86%, notice 60d."
-CAND_0010257,60,0.47484,"Senior Data Scientist, 6yr, Noida, Uttar Pradesh. Skills: Python (27 end., 86mo); OpenSearch (51 end., 26mo). Senior Data Scientist at Google (37mo). Response 72%, notice 120d. Flags: 120d notice."
-CAND_0020350,61,0.47284,"AI Engineer, 6yr, Jaipur, Rajasthan. Skills: NLP (46 end., 76mo); LLMs (60 end., 87mo). AI Engineer at InMobi (45mo). Response 58%, notice 30d."
-CAND_0017960,62,0.47143,"Recommendation Systems Engineer, 8yr, Bangalore, Karnataka. Skills: Machine Learning (6 end., 28mo); Qdrant (7 end., 45mo). Recommendation Systems Engineer at Nykaa (54mo). Response 72%, notice 60d."
-CAND_0017090,63,0.47076,"Senior Software Engineer (ML), 6yr, Kochi, Kerala. Skills: Python (53 end., 47mo). Senior Software Engineer (ML) at Paytm (34mo). Response 71%, notice 60d."
-CAND_0082086,64,0.46852,"Senior Software Engineer (ML), 6yr, Delhi, Delhi. Skills: FAISS (57 end., 50mo); Pinecone (17 end., 24mo). AI Research Engineer at Swiggy (39mo). Response 85%, notice 45d."
-CAND_0037160,65,0.46807,"Data Scientist, 6yr, Mumbai, Maharashtra. Skills: LLMs (24 end., 41mo); Embeddings (46 end., 21mo). Senior Software Engineer (ML) at Verloop.io (38mo). Response 74%, notice 30d."
-CAND_0069905,66,0.46748,"Applied ML Engineer, 7yr, Bhubaneswar, Odisha. Skills: Recommendation Systems (13 end., 75mo); Python (55 end., 42mo). Recommendation Systems Engineer at Observe.AI (39mo). Response 78%, notice 90d. Flags: 90d notice."
-CAND_0077285,67,0.46691,"Recommendation Systems Engineer, 6yr, Ahmedabad, Gujarat. Skills: Pinecone (32 end., 51mo); Embeddings (44 end., 46mo). Recommendation Systems Engineer at Nykaa (42mo). Response 56%, notice 60d."
-CAND_0081852,68,0.46584,"Senior Data Scientist, 6yr, Delhi, Delhi. Skills: Semantic Search (8 end., 42mo); pgvector (37 end., 45mo). Senior Data Scientist at Mad Street Den (51mo). Response 44%, notice 45d."
-CAND_0083879,69,0.46019,"Machine Learning Engineer, 7yr, Noida, Uttar Pradesh. Skills: Fine-tuning LLMs (41 end., 90mo); Machine Learning (6 end., 47mo). Search Engineer at PhonePe (46mo). Response 47%, notice 30d."
-CAND_0029367,70,0.45907,"Senior Data Scientist, 6yr, Bangalore, Karnataka. Skills: FAISS (4 end., 90mo); NLP (2 end., 83mo). Senior Data Scientist at Rephrase.ai (44mo). Response 77%, notice 90d. Flags: 90d notice."
-CAND_0073007,71,0.45356,"AI Specialist, 6yr, Bangalore, Karnataka. Skills: Embeddings (48 end., 57mo); FAISS (9 end., 28mo). AI Specialist at Aganitha (50mo). Response 83%, notice 60d."
-CAND_0010685,72,0.44966,"NLP Engineer, 7yr, Kolkata, West Bengal. Skills: Information Retrieval (43 end., 41mo); Elasticsearch (51 end., 78mo). NLP Engineer at Microsoft (28mo). Response 83%, notice 30d."
-CAND_0008425,73,0.44789,"Senior NLP Engineer, 8yr, Kolkata, West Bengal. Skills: Qdrant (4 end., 92mo); pgvector (47 end., 58mo). Senior ML Engineer — Search & Ranking at Zomato (46mo). Response 66%, notice 90d. Flags: 90d notice."
-CAND_0015097,74,0.4472,"Senior Software Engineer (ML), 6yr, Coimbatore, Tamil Nadu. Skills: Python (43 end., 58mo); NLP (46 end., 56mo). Senior Software Engineer (ML) at Zoho (50mo). Response 69%, notice 30d."
-CAND_0066999,75,0.44623,"Recommendation Systems Engineer, 6yr, Delhi, Delhi. Skills: OpenSearch (8 end., 48mo); FAISS (44 end., 54mo). Recommendation Systems Engineer at Microsoft (49mo). Response 63%, notice 15d."
-CAND_0015967,76,0.44366,"Senior Software Engineer (ML), 5yr, Hyderabad, Telangana. Skills: LLMs (46 end., 31mo). Senior Software Engineer (ML) at Razorpay (42mo). Response 45%, notice 30d."
-CAND_0066376,77,0.43766,"Applied ML Engineer, 6yr, Mumbai, Maharashtra. Skills: Recommendation Systems (41 end., 35mo); LLMs (22 end., 59mo). Applied ML Engineer at Dream11 (45mo). Response 51%, notice 90d. Flags: 90d notice."
-CAND_0054394,78,0.43616,"Recommendation Systems Engineer, 4yr, Pune, Maharashtra. Skills: Fine-tuning LLMs (52 end., 95mo); Embeddings (15 end., 71mo). NLP Engineer at Netflix (34mo). Response 64%, notice 30d."
-CAND_0005509,79,0.43221,"Data Scientist, 6yr, Noida, Uttar Pradesh. Skills: Qdrant (38 end., 23mo). Data Scientist at Ola (28mo). Response 40%, notice 30d."
-CAND_0027691,80,0.4305,"NLP Engineer, 6yr, Pune, Maharashtra. Skills: Recommendation Systems (55 end., 92mo); Embeddings (14 end., 18mo). Applied ML Engineer at Vedantu (33mo). Response 68%, notice 15d."
-CAND_0046132,81,0.42956,"AI Research Engineer, 4yr, Noida, Uttar Pradesh. Skills: no verified domain skills. Senior Software Engineer (ML) at Meesho (33mo). Response 94%, notice 30d."
-CAND_0083852,82,0.42908,"Data Scientist, 6yr, Ahmedabad, Gujarat. Skills: Pinecone (4 end., 59mo). Data Scientist at Mad Street Den (32mo). Response 85%, notice 90d. Flags: 90d notice."
-CAND_0065786,83,0.42572,"AI Specialist, 5yr, Indore, Madhya Pradesh. Skills: Semantic Search (24 end., 23mo); Pinecone (58 end., 56mo). Junior ML Engineer at PhonePe (27mo). Response 89%, notice 45d."
-CAND_0010603,84,0.422,"ML Engineer, 5yr, Bangalore, Karnataka. Skills: OpenSearch (60 end., 25mo). ML Engineer at BYJU'S (45mo). Response 94%, notice 90d. Flags: 90d notice."
-CAND_0075249,85,0.42027,"Applied ML Engineer, 6yr, Ahmedabad, Gujarat. Skills: Machine Learning (46 end., 68mo); Fine-tuning LLMs (11 end., 83mo). Search Engineer at upGrad (38mo). Response 82%, notice 45d."
-CAND_0005649,86,0.41912,"Senior Data Scientist, 7yr, Delhi, Delhi. Skills: Fine-tuning LLMs (27 end., 63mo); Recommendation Systems (24 end., 89mo). Senior Data Scientist at Amazon (42mo). Response 57%, notice 90d. Flags: 90d notice."
-CAND_0016659,87,0.41841,"ML Engineer, 4yr, Coimbatore, Tamil Nadu. Skills: Pinecone (17 end., 31mo); Information Retrieval (43 end., 22mo). ML Engineer at Glance (38mo). Response 89%, notice 45d."
-CAND_0068351,88,0.41267,"Lead AI Engineer, 6yr, Delhi, Delhi. Skills: pgvector (18 end., 77mo); Qdrant (47 end., 78mo). Staff Machine Learning Engineer at Verloop.io (45mo). Response 86%, notice 0d. Flags: not OTW."
-CAND_0094292,89,0.41141,"AI Specialist, 6yr, Mumbai, Maharashtra. Skills: NLP (24 end., 32mo). Data Scientist at Vedantu (15mo). Response 53%, notice 60d."
-CAND_0073982,90,0.40792,"Data Scientist, 7yr, Delhi, Delhi. Skills: FAISS (9 end., 29mo); Elasticsearch (33 end., 23mo). AI Research Engineer at Locobuzz (45mo). Response 65%, notice 60d."
-CAND_0092706,91,0.40333,"AI Research Engineer, 6yr, Delhi, Delhi. Skills: no verified domain skills. AI Research Engineer at Unacademy (44mo). Response 78%, notice 120d. Flags: 120d notice."
-CAND_0090155,92,0.40216,"ML Engineer, 6yr, Pune, Maharashtra. Skills: Pinecone (46 end., 52mo). AI Research Engineer at upGrad (27mo). Response 64%, notice 90d. Flags: 90d notice."
-CAND_0066690,93,0.40034,"ML Engineer, 5yr, Gurgaon, Haryana. Skills: no verified domain skills. ML Engineer at Freshworks (33mo). Response 88%, notice 30d."
-CAND_0017093,94,0.39996,"ML Engineer, 6yr, Hyderabad, Telangana. Skills: Embeddings (35 end., 29mo). AI Research Engineer at Wysa (36mo). Response 58%, notice 30d."
-CAND_0062561,95,0.39994,"ML Engineer, 6yr, Bhubaneswar, Odisha. Skills: Information Retrieval (46 end., 26mo). Senior Software Engineer (ML) at Unacademy (38mo). Response 36%, notice 30d."
-CAND_0042596,96,0.39743,"Analytics Engineer, 5yr, Ahmedabad, Gujarat. Skills: Python (20 end., 27mo). Analytics Engineer at Dream11 (37mo). Response 72%, notice 60d."
-CAND_0040117,97,0.3968,"Recommendation Systems Engineer, 6yr, Vizag, Andhra Pradesh. Skills: Embeddings (58 end., 63mo); FAISS (25 end., 73mo). Recommendation Systems Engineer at PhonePe (51mo). Response 66%, notice 15d."
-CAND_0049538,98,0.39676,"Applied ML Engineer, 6yr, Jaipur, Rajasthan. Skills: OpenSearch (24 end., 64mo); Vector Search (51 end., 41mo). Applied ML Engineer at Saarthi.ai (40mo). Response 72%, notice 30d. Flags: not OTW."
-CAND_0096142,99,0.39635,"Applied ML Engineer, 5yr, Hyderabad, Telangana. Skills: Pinecone (18 end., 62mo); Python (29 end., 72mo). Applied ML Engineer at upGrad (42mo). Response 84%, notice 120d. Flags: 120d notice."
-CAND_0074735,100,0.39504,"Applied ML Engineer, 6yr, Chandigarh, Chandigarh. Skills: Machine Learning (3 end., 65mo); Information Retrieval (28 end., 55mo). Applied ML Engineer at Rephrase.ai (24mo). Response 77%, notice 90d. Flags: 90d notice."
+CAND_0002025,1,0.90183,Background shows traces of core production ML expertise backed by FAISS; TensorFlow. located outside preferred hiring regions with no relocation signal.
+CAND_0018499,2,0.86782,Background shows traces of core production ML expertise backed by Weaviate; Embeddings. Alignment with core requirements is developing.
+CAND_0046064,3,0.84754,Background shows traces of core production ML expertise backed by Pinecone; Elasticsearch. located outside preferred hiring regions with no relocation signal.
+CAND_0086022,4,0.84569,Background shows traces of core production ML expertise backed by Pinecone; PyTorch. Alignment with core requirements is developing.
+CAND_0081846,5,0.84559,Background shows traces of core production ML expertise backed by Vector Search; Information Retrieval. minimal public technical footprint.
+CAND_0011687,6,0.84169,Background shows traces of core production ML expertise backed by OpenSearch; Weaviate. located outside preferred hiring regions with no relocation signal.
+CAND_0088025,7,0.83241,Background shows traces of core production ML expertise backed by Elasticsearch; LLMs. Alignment with core requirements is developing.
+CAND_0052328,8,0.83116,Background shows traces of core production ML expertise and directly relevant current role backed by Vector Search; OpenSearch. Alignment with core requirements is developing.
+CAND_0077337,9,0.83052,Background shows traces of core production ML expertise backed by Information Retrieval; Qdrant. Alignment with core requirements is developing.
+CAND_0041610,10,0.81607,Background shows traces of core production ML expertise backed by OpenSearch; Elasticsearch. Alignment with core requirements is developing.
+CAND_0096142,11,0.81245,Background shows traces of core production ML expertise backed by Pinecone; Python. extended notice period may delay onboarding.
+CAND_0079387,12,0.79487,Background shows traces of core production ML expertise backed by Vector Search; OpenSearch. located outside preferred hiring regions with no relocation signal.
+CAND_0052682,13,0.79379,Background shows traces of core production ML expertise backed by Semantic Search; FAISS. located outside preferred hiring regions with no relocation signal.
+CAND_0076163,14,0.7937,Background shows traces of core production ML expertise backed by Semantic Search; Elasticsearch. located outside preferred hiring regions with no relocation signal.
+CAND_0005260,15,0.79226,Background shows traces of core production ML expertise backed by Semantic Search; NLP. minimal public technical footprint.
+CAND_0000031,16,0.79181,Background shows traces of core production ML expertise backed by Pinecone; Information Retrieval. minimal public technical footprint.
+CAND_0046525,17,0.79112,"Background shows traces of core production ML expertise backed by Qdrant; Sentence Transformers. majority of experience in consulting engagements, limiting product ownership evidence."
+CAND_0068351,18,0.7906,Background shows traces of core production ML expertise backed by Qdrant; Elasticsearch. minimal public technical footprint.
+CAND_0037566,19,0.78634,Background shows traces of core production ML expertise backed by Elasticsearch; Pinecone. Alignment with core requirements is developing.
+CAND_0065195,20,0.7859,Background shows traces of core production ML expertise and directly relevant current role backed by Elasticsearch; Qdrant. Alignment with core requirements is developing.
+CAND_0006418,21,0.78378,Background shows traces of core production ML expertise backed by Qdrant; Semantic Search. Alignment with core requirements is developing.
+CAND_0071974,22,0.78354,Background shows traces of core production ML expertise backed by Qdrant; Elasticsearch. located outside preferred hiring regions with no relocation signal.
+CAND_0042029,23,0.78203,Background shows traces of core production ML expertise backed by OpenSearch; Deep Learning. not currently signaling openness to opportunities.
+CAND_0043228,24,0.77898,Background shows traces of core production ML expertise backed by OpenSearch; Weaviate. not currently signaling openness to opportunities.
+CAND_0045250,25,0.77524,Background shows traces of core production ML expertise backed by Qdrant; Vector Search. minimal public technical footprint.
+CAND_0050454,26,0.7743,Background shows traces of core production ML expertise backed by FAISS; Fine-tuning LLMs. minimal public technical footprint.
+CAND_0064326,27,0.77395,Background shows traces of core production ML expertise and directly relevant current role backed by Weaviate; Deep Learning. Alignment with core requirements is developing.
+CAND_0075249,28,0.77287,Background shows traces of core production ML expertise backed by Pinecone; Machine Learning. Alignment with core requirements is developing.
+CAND_0010257,29,0.76881,Background shows traces of core production ML expertise and directly relevant current role backed by Qdrant; Recommendation Systems. extended notice period may delay onboarding.
+CAND_0049538,30,0.76849,Background shows traces of core production ML expertise backed by Elasticsearch; OpenSearch. not currently signaling openness to opportunities.
+CAND_0007009,31,0.76809,Background shows traces of core production ML expertise backed by OpenSearch; Weaviate. Alignment with core requirements is developing.
+CAND_0041669,32,0.76773,Background shows traces of core production ML expertise and directly relevant current role backed by Semantic Search; Information Retrieval. Alignment with core requirements is developing.
+CAND_0044222,33,0.76676,Background shows traces of core production ML expertise backed by OpenSearch; Hugging Face Transformers. located outside preferred hiring regions with no relocation signal.
+CAND_0005649,34,0.76326,Background shows traces of core production ML expertise backed by Information Retrieval; Weaviate. Alignment with core requirements is developing.
+CAND_0061257,35,0.76299,Background shows traces of core production ML expertise and directly relevant current role backed by Python; Machine Learning. Alignment with core requirements is developing.
+CAND_0069905,36,0.76161,Background shows traces of core production ML expertise and directly relevant current role backed by Weaviate; Sentence Transformers. Alignment with core requirements is developing.
+CAND_0011162,37,0.7612,Background shows traces of core production ML expertise backed by OpenSearch; FAISS. minimal public technical footprint.
+CAND_0068811,38,0.76063,Background shows traces of core production ML expertise backed by Pinecone; OpenSearch. minimal public technical footprint.
+CAND_0078492,39,0.75424,Background shows traces of core production ML expertise backed by FAISS; Qdrant. Alignment with core requirements is developing.
+CAND_0007411,40,0.75421,Background shows traces of core production ML expertise backed by OpenSearch; Information Retrieval. not currently signaling openness to opportunities.
+CAND_0095528,41,0.75364,Background shows traces of core production ML expertise backed by Elasticsearch; Semantic Search. located outside preferred hiring regions with no relocation signal.
+CAND_0075574,42,0.75297,Background shows traces of core production ML expertise backed by Weaviate; OpenSearch. Alignment with core requirements is developing.
+CAND_0049896,43,0.75272,Background shows traces of core production ML expertise backed by Information Retrieval; Fine-tuning LLMs. minimal public technical footprint.
+CAND_0060072,44,0.75069,Background shows traces of core production ML expertise backed by Pinecone; Sentence Transformers. not currently signaling openness to opportunities.
+CAND_0093912,45,0.74953,Background shows traces of core production ML expertise and directly relevant current role backed by Elasticsearch; Vector Search. located outside preferred hiring regions with no relocation signal.
+CAND_0018549,46,0.74952,Background shows traces of core production ML expertise and directly relevant current role backed by Elasticsearch; Qdrant. Alignment with core requirements is developing.
+CAND_0094759,47,0.74928,Background shows traces of core production ML expertise backed by Weaviate; Semantic Search. not currently signaling openness to opportunities.
+CAND_0091909,48,0.74782,Background shows traces of core production ML expertise backed by OpenSearch; Pinecone. Alignment with core requirements is developing.
+CAND_0066999,49,0.747,Background shows traces of core production ML expertise backed by FAISS; Information Retrieval. Alignment with core requirements is developing.
+CAND_0066376,50,0.74617,Background shows traces of core production ML expertise backed by FAISS; Information Retrieval. minimal public technical footprint.
+CAND_0081053,51,0.74218,Background shows traces of core production ML expertise backed by Weaviate; Semantic Search. Alignment with core requirements is developing.
+CAND_0027691,52,0.74088,Background shows traces of core production ML expertise backed by Weaviate; Semantic Search. Alignment with core requirements is developing.
+CAND_0050876,53,0.73899,Background shows traces of core production ML expertise and directly relevant current role backed by OpenSearch; Sentence Transformers. limited recent recruiter engagement.
+CAND_0061265,54,0.73881,Background shows traces of core production ML expertise and directly relevant current role backed by Qdrant; Hugging Face Transformers. extended notice period may delay onboarding.
+CAND_0039383,55,0.73866,Background shows traces of core production ML expertise backed by FAISS; Elasticsearch. Alignment with core requirements is developing.
+CAND_0070202,56,0.73839,Background shows traces of core production ML expertise backed by Qdrant; PyTorch. minimal public technical footprint.
+CAND_0083879,57,0.73824,Background shows traces of core production ML expertise and directly relevant current role backed by Fine-tuning LLMs; Hugging Face Transformers. minimal public technical footprint.
+CAND_0062247,58,0.73754,Background shows traces of core production ML expertise backed by Vector Search; Qdrant. Alignment with core requirements is developing.
+CAND_0036184,59,0.73478,Background shows traces of core production ML expertise backed by Semantic Search; FAISS. located outside preferred hiring regions with no relocation signal.
+CAND_0074735,60,0.73438,Background shows traces of core production ML expertise backed by Information Retrieval; Vector Search. located outside preferred hiring regions with no relocation signal.
+CAND_0083307,61,0.73418,Background shows traces of core production ML expertise backed by Weaviate; Vector Search. located outside preferred hiring regions with no relocation signal.
+CAND_0047721,62,0.7293,Background shows traces of core production ML expertise backed by Information Retrieval; Qdrant. not currently signaling openness to opportunities.
+CAND_0033861,63,0.72797,Background shows traces of core production ML expertise backed by Elasticsearch; Vector Search. located outside preferred hiring regions with no relocation signal.
+CAND_0006557,64,0.7263,Background shows traces of core production ML expertise backed by Qdrant; OpenSearch. minimal public technical footprint.
+CAND_0014440,65,0.72621,Background shows traces of core production ML expertise and directly relevant current role backed by FAISS; Qdrant. Alignment with core requirements is developing.
+CAND_0096172,66,0.72597,Background shows traces of core production ML expertise backed by Elasticsearch; Qdrant. not currently signaling openness to opportunities.
+CAND_0086151,67,0.72514,Background shows traces of core production ML expertise backed by Qdrant; Elasticsearch. extended notice period may delay onboarding.
+CAND_0077285,68,0.72354,Background shows traces of core production ML expertise backed by Information Retrieval; Sentence Transformers. Alignment with core requirements is developing.
+CAND_0099401,69,0.72314,Background shows traces of core production ML expertise backed by Qdrant; Semantic Search. minimal public technical footprint.
+CAND_0087630,70,0.72139,Background shows traces of core production ML expertise backed by OpenSearch; Sentence Transformers. minimal public technical footprint.
+CAND_0029367,71,0.72017,Background shows traces of core production ML expertise backed by Pinecone; FAISS. Alignment with core requirements is developing.
+CAND_0020350,72,0.71959,Background shows traces of core production ML expertise backed by LLMs; NLP. minimal public technical footprint.
+CAND_0089552,73,0.71912,Background shows traces of core production ML expertise backed by Qdrant; Vector Search. not currently signaling openness to opportunities.
+CAND_0017960,74,0.71854,Background shows traces of core production ML expertise and directly relevant current role backed by Information Retrieval; Qdrant. Alignment with core requirements is developing.
+CAND_0020877,75,0.7184,Background shows traces of core production ML expertise backed by Information Retrieval; Elasticsearch. not currently signaling openness to opportunities.
+CAND_0098846,76,0.71686,Background shows traces of core production ML expertise and directly relevant current role backed by Qdrant; Recommendation Systems. Alignment with core requirements is developing.
+CAND_0015578,77,0.71405,Background shows traces of core production ML expertise backed by Pinecone; FAISS. minimal public technical footprint.
+CAND_0030031,78,0.71173,Background shows traces of core production ML expertise and directly relevant current role backed by Vector Search; NLP. located outside preferred hiring regions with no relocation signal.
+CAND_0044855,79,0.71015,Background shows traces of core production ML expertise backed by Qdrant; Pinecone. not currently signaling openness to opportunities.
+CAND_0081852,80,0.7079,Background shows traces of directly relevant current role and strong semantic alignment with the role backed by Senior Data Scientist. Alignment with core requirements is developing.
+CAND_0051630,81,0.70554,Background shows traces of core production ML expertise backed by Information Retrieval; Elasticsearch. not currently signaling openness to opportunities.
+CAND_0070398,82,0.69715,"Background shows traces of core production ML expertise backed by FAISS; Information Retrieval. majority of experience in consulting engagements, limiting product ownership evidence."
+CAND_0076251,83,0.69536,Background shows traces of core production ML expertise and directly relevant current role backed by Hugging Face Transformers; Learning to Rank. minimal public technical footprint.
+CAND_0040117,84,0.69421,Background shows traces of core production ML expertise and directly relevant current role backed by FAISS; Embeddings. located outside preferred hiring regions with no relocation signal.
+CAND_0079064,85,0.69308,Background shows traces of core production ML expertise backed by Semantic Search; OpenSearch. minimal public technical footprint.
+CAND_0027801,86,0.68833,Background shows traces of core production ML expertise and directly relevant current role backed by OpenSearch; FAISS. extended notice period may delay onboarding.
+CAND_0030953,87,0.68649,Background shows traces of core production ML expertise and directly relevant current role backed by Qdrant; Weaviate. frequent short stints suggest title-chasing pattern.
+CAND_0060054,88,0.68571,Background shows traces of core production ML expertise and directly relevant current role backed by Semantic Search; Elasticsearch. minimal public technical footprint.
+CAND_0015528,89,0.68294,Background shows traces of core production ML expertise backed by OpenSearch; FAISS. located outside preferred hiring regions with no relocation signal.
+CAND_0094056,90,0.67885,Background shows traces of core production ML expertise backed by Pinecone; Embeddings. not currently signaling openness to opportunities.
+CAND_0092255,91,0.67882,Background shows traces of core production ML expertise and directly relevant current role backed by Vector Search; Weaviate. Alignment with core requirements is developing.
+CAND_0016163,92,0.67775,Background shows traces of core production ML expertise and directly relevant current role backed by Weaviate; TensorFlow. extended notice period may delay onboarding.
+CAND_0009024,93,0.67761,Background shows traces of core production ML expertise and directly relevant current role backed by OpenSearch; Recommendation Systems. minimal public technical footprint.
+CAND_0007412,94,0.67628,Background shows traces of core production ML expertise and directly relevant current role backed by Pinecone; PyTorch. frequent short stints suggest title-chasing pattern.
+CAND_0009691,95,0.67496,Background shows traces of core production ML expertise backed by Qdrant; Fine-tuning LLMs. extended notice period may delay onboarding.
+CAND_0057563,96,0.6745,Background shows traces of core production ML expertise and directly relevant current role backed by Elasticsearch; OpenSearch. minimal public technical footprint.
+CAND_0058575,97,0.67145,Background shows traces of core production ML expertise and directly relevant current role backed by Pinecone; Hugging Face Transformers. minimal public technical footprint.
+CAND_0028793,98,0.66662,Background shows traces of core production ML expertise and directly relevant current role backed by Information Retrieval; Embeddings. extended notice period may delay onboarding.
+CAND_0051292,99,0.66293,Background shows traces of core production ML expertise and directly relevant current role backed by Vector Search; Elasticsearch. located outside preferred hiring regions with no relocation signal.
+CAND_0040178,100,0.65999,Background shows traces of core production ML expertise and directly relevant current role backed by OpenSearch; Vector Search. minimal public technical footprint.

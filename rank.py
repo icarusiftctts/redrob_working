@@ -20,12 +20,12 @@ import numpy as np
 from features import (
     is_honeypot,
     score_candidate,
-    generate_reasoning,
     f_skill_core_score,
     f_title_current,
     f_title_avg,
     f_consulting_penalty,
 )
+from reasoning import generate_reasoning
 
 
 # ─── Loaders ──────────────────────────────────────────────────────────────────

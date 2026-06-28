@@ -13,7 +13,8 @@ import json
 
 import gradio as gr
 
-from features import is_honeypot, score_candidate, generate_reasoning
+from features import is_honeypot, score_candidate
+from reasoning import generate_reasoning
 
 
 def rank_candidates(json_input: str) -> str:
@@ -73,8 +74,7 @@ demo = gr.Interface(
     ),
     outputs=gr.Textbox(
         lines=15,
-        label='Ranked CSV output',
-        show_copy_button=True
+        label='Ranked CSV output'
     ),
     title='Redrob Candidate Ranker — Hosted Sandbox',
     description=(
@@ -82,8 +82,7 @@ demo = gr.Interface(
         'Honeypots are filtered out automatically using logic validation rules. '
         'Offline semantic scores (SBERT, BM25) default to 0 in this lightweight demo.'
     ),
-    theme=premium_theme,
-    allow_flagging='never',
+    theme=premium_theme
 )
 
 if __name__ == '__main__':

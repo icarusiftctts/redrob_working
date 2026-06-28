@@ -16,12 +16,19 @@ CORE_SKILLS = {
     'vector search': 3.0, 'semantic search': 3.0,
     'information retrieval': 3.0, 'faiss': 3.0,
     'pinecone': 3.0, 'qdrant': 3.0, 'weaviate': 3.0,
+    'sentence-transformers': 3.0, 'bge': 3.0, 'e5': 3.0,
+    'cross-encoder': 3.0, 'reranking': 3.0, 're-ranking': 3.0,
+    'ann': 3.0, 'approximate nearest neighbor': 3.0,
+    'hnsw': 3.0, 'ivf': 3.0, 'learning to rank': 3.0, 'ltr': 3.0,
+    'neural ir': 3.0, 'dense retrieval': 3.0, 'sparse retrieval': 3.0,
+    'bm25': 3.0, 'colbert': 3.0, 'dpr': 3.0,
     # Tier-2 — strong signal
     'nlp': 2.0, 'natural language': 2.0, 'python': 2.0,
     'ranking': 2.0, 'recommendation': 2.0, 'elasticsearch': 2.0,
     'opensearch': 2.0, 'transformer': 2.0, 'bert': 2.0,
     'llm': 2.0, 'machine learning': 2.0, 'search': 2.0,
     'fine-tuning': 2.0, 'rlhf': 2.0,
+    'xgboost': 2.0, 'lightgbm': 2.0, 'tf-idf': 2.0,
     # Tier-1 — relevant but not decisive
     'pytorch': 1.0, 'tensorflow': 1.0, 'deep learning': 1.0,
     'data science': 1.0, 'a/b testing': 1.0,
@@ -454,7 +461,7 @@ def compute_behavioral_multiplier(signals: dict) -> float:
     """
     Multiplicative modifier applied AFTER the base score.
     Encodes availability, recency, responsiveness, and reliability.
-    Result clipped to [0.15, 1.40].
+    Result clipped to [0.40, 1.40].
     """
     m = 1.0
 
@@ -469,7 +476,7 @@ def compute_behavioral_multiplier(signals: dict) -> float:
 
     # 1. Open-to-work is a strong signal
     if not signals.get('open_to_work_flag', True):
-        m *= 0.55
+        m *= 0.70
 
     # 2. Recency (exponential decay, 90-day half-life, reference date June 2026)
     last = signals.get('last_active_date')
@@ -484,13 +491,13 @@ def compute_behavioral_multiplier(signals: dict) -> float:
     # 3. Recruiter response rate
     rr = signals.get('recruiter_response_rate', 0.50)
     if rr < 0.10:
-        m *= 0.45
+        m *= 0.65
     elif rr < 0.25:
-        m *= 0.70
+        m *= 0.80
     elif rr < 0.45:
-        m *= 0.82
-    elif rr < 0.50:
         m *= 0.90
+    elif rr < 0.50:
+        m *= 0.95
     elif rr >= 0.70:
         m *= 1.10
 
@@ -506,7 +513,40 @@ def compute_behavioral_multiplier(signals: dict) -> float:
     icr = signals.get('interview_completion_rate', 1.0)
     m  *= 0.50 + 0.50 * icr
 
-    return float(np.clip(m, 0.15, 1.40))
+    # 6. Offer acceptance rate
+    oar = signals.get('offer_acceptance_rate', 0.60)
+    if oar >= 0.80:
+        m *= 1.08
+    elif oar < 0.30:
+        m *= 0.88
+
+    # 7. Applications submitted & Open-to-work corroboration
+    apps = signals.get('applications_submitted_30d', 0)
+    otw = signals.get('open_to_work_flag', True)
+    if otw:
+        if apps > 0:
+            m *= 1.05
+    else:
+        if apps > 0:
+            m *= 1.15
+
+    # 8. Preferred work mode alignment (hybrid / flexible preference)
+    mode = signals.get('preferred_work_mode', 'hybrid')
+    if isinstance(mode, str):
+        mode_l = mode.lower()
+        if mode_l in ('hybrid', 'flexible'):
+            m *= 1.05
+        elif mode_l in ('onsite', 'remote'):
+            m *= 0.90
+
+    # 9. Verification & connection trust signals
+    email_ver = signals.get('verified_email', False)
+    phone_ver = signals.get('verified_phone', False)
+    li_conn = signals.get('linkedin_connected', False)
+    if email_ver and phone_ver and li_conn:
+        m *= 1.04
+
+    return float(np.clip(m, 0.40, 1.40))
 
 
 # ─── Feature extractor ────────────────────────────────────────────────────────
@@ -619,11 +659,37 @@ def yoe_multiplier(years: float) -> float:
     return 0.40                    # 15yr+ is a hard mismatch for founding team
 
 
+def salary_multiplier(signals: dict) -> float:
+    """
+    Multiplier penalty for expected salary.
+    Target range is 25-55 LPA. Candidates expecting 80+ LPA are extreme outliers.
+    """
+    sal = signals.get('expected_salary_range_inr_lpa')
+    if not sal or not isinstance(sal, dict):
+        return 1.0  # neutral default
+
+    min_sal = sal.get('min')
+    max_sal = sal.get('max')
+    if min_sal is None or max_sal is None:
+        return 1.0
+
+    avg_sal = (min_sal + max_sal) / 2.0
+
+    if avg_sal <= 55.0:
+        return 1.00  # perfect fit / budget friendly
+    if avg_sal <= 70.0:
+        return 0.80  # slightly high, minor penalty
+    if avg_sal <= 80.0:
+        return 0.50  # very high, major penalty
+    return 0.15      # 80+ LPA: extreme outlier, mismatch
+
 
 def has_minimum_evidence(candidate: dict) -> bool:
     """
-    A candidate must have at least 1 verified core-domain skill
-    (advanced/expert, duration > 6mo, positive core weight).
+    A candidate must have at least 1 verified core-domain skill.
+    Can be:
+      - advanced/expert with duration > 6 months
+      - intermediate with duration > 24 months
     No evidence = not a credible candidate regardless of other signals.
     """
     skills = candidate.get('skills', [])
@@ -631,10 +697,11 @@ def has_minimum_evidence(candidate: dict) -> bool:
         name = s['name'].lower()
         prof = s.get('proficiency', 'beginner')
         dur  = s.get('duration_months', 0)
-        if (prof in ('advanced', 'expert')
-                and dur > 6
-                and any(core in name for core in CORE_SKILLS if CORE_SKILLS[core] > 0)):
-            return True
+        
+        # Check if matches positive weight core skill
+        if any(core in name for core in CORE_SKILLS if CORE_SKILLS[core] > 0):
+            if (prof in ('advanced', 'expert') and dur > 6) or (prof == 'intermediate' and dur > 24):
+                return True
     return False
 
 
@@ -644,7 +711,7 @@ def score_candidate(candidate: dict,
     """
     Returns (final_score, features_dict).
     Returns (-1.0, {}) for honeypots.
-    final_score = base_score × behavioral_multiplier.
+    final_score = (base_score + 0.15 * (behavioral_multiplier - 1.0)) * location_multiplier * yoe_multiplier * salary_multiplier.
     """
     if is_honeypot(candidate):
         return -1.0, {}
@@ -656,69 +723,18 @@ def score_candidate(candidate: dict,
     mult  = compute_behavioral_multiplier(candidate.get('redrob_signals', {}))
     loc_mult = location_multiplier(candidate.get('profile', {}), candidate.get('redrob_signals', {}))
     yoe_mult = yoe_multiplier(candidate.get('profile', {}).get('years_of_experience', 0))
+    sal_mult = salary_multiplier(candidate.get('redrob_signals', {}))
 
-    final = base * mult * loc_mult * yoe_mult
-    return round(final, 5), feats
+    final = (base + 0.15 * (mult - 1.0)) * loc_mult * yoe_mult * sal_mult
+    return round(max(0.0, final), 5), feats
 
+# ─── Export aliases for reasoning.py ──────────────────────────────────────────
+# reasoning.py imports these underscore-prefixed names to stay in sync.
 
-# ─── Reasoning generator ──────────────────────────────────────────────────────
+_RETRIEVAL_LIBS = RETRIEVAL_LIBS
+_CONSULTING_FIRMS = CONSULTING_FIRMS
+_HEADLINE_KEYWORDS = HEADLINE_KEYWORDS
+_SENIORITY = SENIORITY
+_ML_ROLES = ML_ROLES
+_CORE_SKILL_NAMES = {k for k, v in CORE_SKILLS.items() if v > 0}
 
-_CORE_NAMES = [
-    'embedding', 'retrieval', 'vector', 'nlp', 'python',
-    'machine learning', 'llm', 'search', 'ranking',
-    'recommendation', 'elasticsearch', 'faiss', 'pinecone', 'qdrant',
-]
-
-def generate_reasoning(candidate: dict, features: dict) -> str:
-    """
-    1–2 sentence reasoning. Pulls real values from the profile.
-    No templates — each string must be distinct and fact-specific.
-    """
-    p   = candidate['profile']
-    sig = candidate.get('redrob_signals', {})
-    sk  = candidate.get('skills', [])
-    ca  = candidate.get('career_history', [])
-
-    # Top 2 verified domain skills
-    top_skills = []
-    for s in sk:
-        if (s.get('proficiency') in ('advanced', 'expert')
-                and s.get('duration_months', 0) > 6
-                and any(core in s['name'].lower() for core in _CORE_NAMES)):
-            end = s.get('endorsements', 0)
-            dur = s.get('duration_months', 0)
-            top_skills.append(f"{s['name']} ({end} end., {dur}mo)")
-        if len(top_skills) == 2:
-            break
-
-    # Most relevant or longest ML/AI role
-    ml_ca = [r for r in ca
-             if any(tok in r.get('title', '').lower() for tok in ML_ROLES)]
-    best_role = (max(ml_ca, key=lambda r: r.get('duration_months', 0), default=None)
-                 or (max(ca, key=lambda r: r.get('duration_months', 0))
-                     if ca else None))
-
-    yoe    = p.get('years_of_experience', 0)
-    title  = p.get('current_title', 'unknown')
-    loc    = p.get('location', 'unknown')
-    rr     = sig.get('recruiter_response_rate', 0)
-    notice = sig.get('notice_period_days', '?')
-    otw    = sig.get('open_to_work_flag', False)
-
-    skills_str = '; '.join(top_skills) if top_skills else 'no verified domain skills'
-    role_str   = (f"{best_role['title']} at {best_role['company']} "
-                  f"({best_role['duration_months']}mo). "
-                  if best_role else '')
-
-    concerns = []
-    if not otw:
-        concerns.append('not OTW')
-    if isinstance(notice, int) and notice > 60:
-        concerns.append(f'{notice}d notice')
-    if rr < 0.30:
-        concerns.append(f'{rr:.0%} response rate')
-    concern_str = f' Flags: {"; ".join(concerns)}.' if concerns else ''
-
-    s1 = f"{title}, {yoe:.0f}yr, {loc}. Skills: {skills_str}."
-    s2 = f"{role_str}Response {rr:.0%}, notice {notice}d.{concern_str}"
-    return f"{s1} {s2}"
