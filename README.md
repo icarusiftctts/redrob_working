@@ -5,7 +5,7 @@ The goal of this project is to rank ~100,000 candidate profiles against a specif
 
 ---
 
-## 🚀 Key Highlights & Performance
+## Key Highlights & Performance
 
 - **Two-Stage Architecture**: Fast coarse-filtering (6 features) scales the dataset down from 100,000 to the top 5,000 candidates in seconds, followed by comprehensive 22-feature fine scoring.
 - **CPU-Optimized Runtime**: Processes the entire 100K dataset and writes the final ranked CSV in **~10–12 seconds** on a standard 8-core CPU (no GPU/network required during ranking).
@@ -15,7 +15,7 @@ The goal of this project is to rank ~100,000 candidate profiles against a specif
 
 ---
 
-## 🛠️ System Architecture
+## System Architecture
 
 ```mermaid
 graph TD
@@ -53,7 +53,7 @@ Honeypots are synthetic profiles designed to trap naive keyword-matchers. The sy
 
 ---
 
-## 📊 Scoring & Feature Details
+## Scoring & Feature Details
 
 The final candidate score is computed as:
 $$\text{Final Score} = (\text{Base Score} + 0.15 \times (\text{Behavioral Multiplier} - 1.0)) \times \text{Location Multiplier} \times \text{YoE Multiplier} \times \text{Salary Multiplier}$$
@@ -73,7 +73,7 @@ $$\text{Final Score} = (\text{Base Score} + 0.15 \times (\text{Behavioral Multip
 
 ---
 
-## ✍️ Evidence-Grounded Reasoning Engine (`reasoning.py`)
+## Evidence-Grounded Reasoning Engine (`reasoning.py`)
 
 A custom reasoning engine generates 1–2 sentence justifications for each of the top 100 candidates:
 1. **18 Evidence Extractors**: Pulls explicit details (e.g., search tools like FAISS/Qdrant, career progression, production scaling metrics, and degree details) directly from profile history.
@@ -83,7 +83,7 @@ A custom reasoning engine generates 1–2 sentence justifications for each of th
 
 ---
 
-## 💻 Local Setup & Replication
+## Local Setup & Replication
 
 Ensure you have **Python 3.11.x** installed.
 
@@ -98,7 +98,7 @@ Extracts features and embeds candidates using SBERT and BM25 (requires `candidat
 ```bash
 python precompute.py
 ```
-*Note: This step downloads `all-MiniLM-L6-v2` and runs inference for 100K profiles. It takes ~20 minutes on a standard CPU.*
+*Note: This step downloads `all-MiniLM-L6-v2` and runs inference for 100K profiles. It takes ~20 minutes on a standard CPU. (We used an Intel i7 13th Generation Laptop unit with 16 GB of RAM)*
 
 ### 3. Execute Candidate Ranker
 Computes final scores, filters out honeypots, runs the coarse-to-fine pipeline, and writes `submission.csv`:
@@ -118,7 +118,7 @@ python validate_submission.py submission.csv
 
 ---
 
-## 🎨 Interactive Sandbox (`app.py`)
+## Interactive Sandbox (`app.py`)
 
 A premium, interactive Gradio dashboard is provided to test the ranker. It features a modern theme styled with **Outfit typography** and a soft indigo/slate color palette.
 
@@ -131,26 +131,8 @@ Open the local URL in your browser, paste a JSON array of candidates (e.g. from 
 
 ---
 
-## 📈 Weight Tuning & Optimization (`label_tool.py` & `tune_weights.py`)
+##  A Note on Heuristic Weights
 
-To shift the ranking pipeline from heuristic weights to learned weights optimized for NDCG, you can use the built-in labeling and optimization tools:
+Ideally we would use Learning To Rank to train a model on the labeled data (e.g. AUC 0.85+), but in the absence of that the heuristic weights in the code above are a decent starting point and perform well on the validation set. If the project had given sample rankings as well, we would have preferred this approach. However, considering the given dataset did not contain any rankings as such, we opted for continuing with heuristic weights. 
 
-### 1. Label a Sample of Candidates
-Run the interactive CLI labeling tool to grade a subset of candidates on a `0–4` relevance scale:
-```bash
-python label_tool.py
-```
-- It loads candidates (automatically skipping honeypots) and displays a clean profile summary.
-- Enter a score between `0` (Reject) and `4` (Outstanding Hire) to grade candidates.
-- Progress is saved incrementally to `labeled_candidates.json`. You can stop and resume at any time.
-
-### 2. Run the Weight Optimizer
-Once you have labeled a few candidates (recommend at least 10–20), run the optimizer:
-```bash
-python tune_weights.py
-```
-- The optimizer reads your grades and compiles the feature vectors.
-- It uses **RankNet-style pairwise logistic loss** regularized toward your initial heuristic weights to prevent overfitting.
-- Constrained optimization (`SLSQP`) ensures that all weights are positive and sum to exactly `1.0`.
-- The tool reports the before-and-after NDCG@10, NDCG@All, and Pairwise Accuracy, and displays the weight changes.
-- It prompts you to write the new weights directly back to `features.py`.
+Heuristic weights only imply that the weights are not trained against a given dataset, they have been manually edited several times over to ensure that results are coherent and follow the Job Description given. 
